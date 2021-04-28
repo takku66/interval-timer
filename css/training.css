@@ -1,0 +1,67 @@
+
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	grid-template-rows: 1fr max-content 1fr;
+	grid-template-areas:
+		". .... ."
+		". item ."
+		". .... .";
+}
+
+.container {
+	margin: 0;
+	grid-area: item;
+	width: max-content;
+	height: max-content;
+	grid-gap: 2px;
+	display: grid;
+	grid-template-columns: repeat(2,200px);
+	grid-template-rows: repeat(4, auto);
+}
+
+.grid_sub {
+	
+}
+
+.tmr.grid_sub {
+	grid-area: 1/1/1/3;
+}
+
+.txt.grid_sub {
+	grid-area: 2/1/2/3;
+	display:grid;
+	grid-template-columns: repeat(2,auto);
+	grid-template-rows: repeat(3, auto);
+}
+
+.btn.grid_sub {
+	grid-area: 3/1/3/3;
+	display: grid;
+	justify-content: center;
+	grid-gap: inherit;
+	grid-template-columns: repeat(3,100px);
+	grid-template-rows: repeat(1, 30px);
+}
+.file.grid_sub {
+	grid-area: 4/1/4/3;
+}
+
+
+.tmr {
+	line-height: 50px;
+	background-color: lightGray;
+	text-align: center;
+	font-size: 30px;
+	color: #303030;
+}
+.tmr.now_trng {
+	background-color: hsl(10,90%,70%);
+}
+.tmr.itvl_trng {
+	background-color: hsl(200,90%,70%);
+}

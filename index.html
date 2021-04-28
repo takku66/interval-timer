@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./css/training.css" />
+	<script src="./js/training.js" ></script>
+</head>
+<body>
+	<form id="grid_container" class="container">
+		<div id="dsp_tmr" class="tmr grid_sub">
+		</div>
+		<div class="txt grid_sub">
+			<span>トレーニング時間（分）：</span><input type="text" id="txt_trng_time" class="txt_trng_time" value="4" size="4" ></input>
+			<span>インターバール時間（分）：</span><input type="text" id="txt_itvl_time" class="txt_itvl_time" value="3" size="4" ></input>
+			<span>セット数：</span><input type="text" id="txt_set_cnt" class="txt_set_cnt" value="4" size="4" ></input>
+		</div>
+		<div class="btn grid_sub">
+			<input type="button" id="btn_tmr_strt" class="btn_strt_tmr" value="スタート" ></input>
+			<input type="button" id="btn_tmr_stp" class="btn_stp_tmr" value="ストップ" ></input>
+			<input type="button" id="btn_tmr_rst" class="btn_rst_tmr" value="リセット" ></input>
+		</div>
+		<div class="file grid_sub">
+			<div id="drop_zone""></div>
+			<div><span>スタート音：</span><input type="file" id="file_strt_beep" class="file strt_beep" ></input></div>
+			<div><span>ストップ音：</span><input type="file" id="file_stp_beep" class="file strt_beep" ></input></div>
+		</div>
+	</form>
+</body>
+
+</html>
